@@ -1,0 +1,188 @@
+/* perfectly work without any left-right scroll at 13375 px  */
+/*  */
+
+
+
+@media screen and (max-width:1200px) {
+
+    .main-nav li a:link, .main-nav li {
+        font-size: 1.5rem;
+    }
+
+    .social-link ul li {
+        margin: 0;
+    }
+}
+
+
+/*  */
+/*  */
+
+
+@media all and (max-width:1024px) {
+    .row {
+        margin: 0 1.5rem;
+    }
+
+    .main-nav {
+        display: none;
+    }
+
+    html {
+        font-size: 57.5%;
+    }
+
+    .client-photo {
+        width: 100%;
+        float: none;
+    }
+
+    .client-photo img {
+        float: none;
+    }
+
+    .footer-section li a {
+        font-size: 1.6rem;
+    }
+
+    .mobile-menu {
+        display: block;
+    }
+}
+
+/* 980 px */
+/* 980 px */
+
+@media all and (max-width:980px) {
+    .span_1_of_4 {
+        width: 49.2%;
+    }
+
+    .col {
+        margin-left: 0;
+    }
+
+    .team-section .box p {
+        margin-right: 1rem;
+        margin-left: 1rem;
+    }
+
+    .contact .form .col{
+        margin-right: .5rem;
+    }
+}
+
+
+/* 768px */
+/* 768px */
+
+@media all and (max-width:768px) {
+
+    .little-description {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    header {
+        height: 80vh;
+    }
+
+    header h1 {
+        font-size: 3.5rem;
+        line-height: 5rem;
+        margin-bottom: 2rem;
+    }
+
+    h2 {
+        font-size: 3.4rem;
+    }
+
+    h3 {
+        font-size: 2rem;
+    }
+
+    .contact .row form{
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .footer-section li{
+        margin: 0 0.5rem;
+    }
+}
+
+/* 480 px */
+/* 480 px */
+
+@media all and (max-width:480px){
+
+    html{
+        font-size: 50.5%;
+    }
+
+    header {
+        height: 65vh;
+    }
+    header h1{
+        width: 100%;
+        margin-top: -2rem;
+    }
+
+    .span_1_of_4 {
+        width: 100%;
+    }
+
+    h2{
+        font-size: 3rem;
+    }
+
+    .team-section h2{
+        font-size: 2.5rem;
+    }
+
+    .team-section .little-description{
+        font-size: 1.5rem;
+    }
+
+    .portfolio-section p{
+        font-size: 1.6rem;
+    }
+
+    .testimonial h2{
+        font-size: 2.2rem;
+    }
+
+    .contact .little-description{
+        font-size:1.5rem ;
+    }
+
+    .footer-section .row{
+        margin: 0;
+    }
+
+    .footer-section li{
+        margin-bottom:1rem;
+    }
+}
+
+/* 380 px */
+/* 380 px */
+
+@media all and (max-width:380px){
+
+    h2{
+        font-size: 2.3rem;
+    }
+
+    .team-section h2{
+        font-size: 1.8rem;
+    }
+
+    .portfolio-section .row .portfolio-filter button{
+        margin-right: 0;
+    }
+
+    .testimonial h2{
+        font-size: 1.7rem;
+    }
+}
