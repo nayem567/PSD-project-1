@@ -130,7 +130,7 @@
         background-repeat: no-repeat;
         background-position: center center;
         background-attachment: fixed;
-        height: 85vh;
+        min-height: 80rem;
         position: relative;
     }
 
