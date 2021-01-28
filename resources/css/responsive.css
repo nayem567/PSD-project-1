@@ -84,7 +84,7 @@
     }
 
     header {
-        height: 60rem;
+        min-height:55rem;
     }
 
     header h1 {
