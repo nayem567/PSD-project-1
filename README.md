@@ -1,1 +1,1 @@
-# CUDA-PSD-Project1
+# PSD-Project-1
