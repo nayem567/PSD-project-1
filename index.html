@@ -4,14 +4,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE-edge">
-    <title>CUDA Project PSD to HTML </title>
-    <link rel="shortcut icon" href="resources/img/favicon.png" type="image/x-icon">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="description"
+        content="This is a PSD to HTML Project with proper page speed optimization, seo and accessibility. Showcasing my overall skill in building a website">
+    <!-- Meta for Open Graph Protocol -->
+    <meta property="og:title" content="PSD to HTML" >
+    <meta property="og:type" content="html.css.psd">
+    <meta property="og:url" content="https://nayem567.github.io/PSD-project-1/">
+    <meta property="og:image" content="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg">
+    <!-- -->
+    <title>Project PSD to HTML </title>
+    <link rel="shortcut icon" href="resources/img/favicon.webp" type="image/x-icon">
     <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600;700&display=swap"
-        rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600;700&display=swap" rel="stylesheet"> -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600;700&display=swap"
+        as="style" onload="this.onload=null;this.rel='stylesheet'">
     <!-- FONT AWESOME CSS -->
-    <script src="https://kit.fontawesome.com/942b9f243c.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/942b9f243c.js" crossorigin="anonymous" async></script>
+
 
     <!-- Vendors -->
     <!--3RD Party Normalize CSS -->
@@ -25,12 +36,6 @@
     <!-- My Own files -->
     <link rel="stylesheet" href="resources/css/style.css">
     <link rel="stylesheet" href="resources/css/responsive.css">
-
-    <style>
-
-    </style>
-
-
 </head>
 
 <body>
@@ -41,7 +46,7 @@
         <nav>
             <div class="row">
                 <a href="#home">
-                    <img class="logo" src="resources/img/Logo.png" alt="CUDA">
+                    <img class="logo" src="resources/img/logo.webp" alt="logo" width="1976" height="1084">
                 </a>
                 <ul class="main-nav ">
                     <li><a class="active" href="#home">HOME</a></li>
@@ -52,11 +57,13 @@
                     <li><a href="#testimonial">Testimonial</a></li>
                     <li><a href="#contact">CONTACT</a></li>
                 </ul>
-<!--  -->
-                <div class="mobile-menu"> 
+                <!--  -->
+                <div class="mobile-menu">
                     <span onclick="openNav()">&#9776;</span>
                     <div id="myNav" class="overlay">
-                        <a href="javascript:void(0)" onclick="closeNav()" class="closebtn">&times;</a>
+                        <!--  <a href="javascript:void(0)" onclick="closeNav()" class="closebtn">&times;</a> -->
+                        <a href="/close-navigation" onclick="closeNav(); return false;" class="closebtn"
+                            aria-label="Close Navigation">&times;</a>
                         <div class="overlay-content">
                             <a onclick="closeNav()" href="#home">HOME</a>
                             <a onclick="closeNav()" href="#service">SERVICE</a>
@@ -64,11 +71,11 @@
                             <a onclick="closeNav()" href="#skill">SKILL</a>
                             <a onclick="closeNav()" href="#portfolio">Portfolio</a>
                             <a onclick="closeNav()" href="#testimonial">Testimonial</a>
-                            <a onclick="closeNav()" href="#contact">CONTACT</a>             
+                            <a onclick="closeNav()" href="#contact">CONTACT</a>
                         </div>
                     </div>
                 </div>
-<!--  -->
+                <!--  -->
             </div>
 
         </nav>
@@ -98,38 +105,34 @@
 
         <div class="row">
             <div class="col span_1_of_4 box">
-                <img src="resources/img/Flag.png" alt="Flag" class="services-icon">
+                <img src="resources/img/Flag.webp" alt="Flag" class="services-icon" width="120" height="124">
                 <h3>Branding</h3>
                 <p class="little-description"> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
                     nonummy nibh </p>
             </div>
 
             <div class="col span_1_of_4 box">
-                <img src="resources/img/pencil.png" alt="pencil" class="services-icon">
+                <img src="resources/img/pencil.webp" alt="pencil" class="services-icon" width="90" height="131">
                 <h3>Design</h3>
                 <p class="little-description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
                     nibh </p>
             </div>
 
             <div class="col span_1_of_4 box">
-                <img src="resources/img/gears.png" alt="gears" class="services-icon">
+                <img src="resources/img/gears.webp" alt="gears" class="services-icon" width="159" height="126">
                 <h3>Development</h3>
                 <p class="little-description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
                     nibh </p>
             </div>
 
             <div class="col span_1_of_4 box">
-                <img src="resources/img/Rocket.png" alt="Rocket" class="services-icon">
+                <img src="resources/img/Rocket.webp" alt="Rocket" class="services-icon" width="95" height="134">
                 <h3>Rocket Science</h3>
                 <p class="little-description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
                     nibh</p>
             </div>
         </div>
-
-
-
     </section>
-
     <!-- END SERVICE SECTION -->
 
     <!-- Start Team SECTION -->
@@ -146,78 +149,93 @@
 
         <div class="row">
             <div class="col span_1_of_4 box">
-                <img src="resources/img/2.jpg" alt="potrait" class="team-member">
+                <img src="resources/img/2.webp" alt="potrait" class="team-member" width="200" height="200">
                 <h3>ANNE HATHAWAY</h3>
                 <span class="role">CEO / Marketing Guru</span>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni sequi vero consectetur ipsum atque
                     adipisci aut saepe aperiam vitae quam!</p>
                 <div class="social-link">
                     <ul>
-                        <li><a href="https://www.facebook.com"><i class="fa fa-facebook" aria-hidden="true"></i> </a>
+                        <li><a href="https://www.facebook.com" aria-label="social_links"><i class="fa fa-facebook"
+                                    aria-hidden="true"></i> </a>
                         </li>
-                        <li><a href="https://www.twitter.com"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                        <li><a href="https://www.linkedin.com"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                        <li><a href="https://www.twitter.com" aria-label="social_links"><i class="fa fa-twitter"
+                                    aria-hidden="true"></i></a></li>
+                        <li><a href="https://www.linkedin.com" aria-label="social_links"><i class="fa fa-linkedin"
+                                    aria-hidden="true"></i></a>
                         </li>
-                        <li><a href="https://www.google.com"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+                        <li><a href="https://www.google.com" aria-label="social_links"><i class="fa fa-envelope"
+                                    aria-hidden="true"></i></a></li>
                     </ul>
                 </div>
             </div>
 
             <div class="col span_1_of_4 box">
-                <img src="resources/img/4.jpg" alt="potrait" class="team-member">
+                <img src="resources/img/4.webp" alt="potrait" class="team-member" width="200" height="200">
                 <h3>ANNE HATHAWAY</h3>
                 <span class="role">CEO / Marketing Guru</span>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni sequi vero consectetur ipsum atque
                     adipisci aut saepe aperiam vitae quam!</p>
                 <div class="social-link">
                     <ul>
-                        <li><a href="https://www.facebook.com"><i class="fa fa-facebook" aria-hidden="true"></i> </a>
+                        <li><a href="https://www.facebook.com" aria-label="social_media"><i class="fa fa-facebook"
+                                    aria-hidden="true"></i> </a>
                         </li>
-                        <li><a href="https://www.twitter.com"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                        <li><a href="https://www.linkedin.com"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                        <li><a href="https://www.twitter.com" aria-label="social_media"><i class="fa fa-twitter"
+                                    aria-hidden="true"></i></a></li>
+                        <li><a href="https://www.linkedin.com" aria-label="social_media"><i class="fa fa-linkedin"
+                                    aria-hidden="true"></i></a>
                         </li>
-                        <li><a href="https://www.google.com"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+                        <li><a href="https://www.google.com" aria-label="social_media"><i class="fa fa-envelope"
+                                    aria-hidden="true"></i></a></li>
                     </ul>
                 </div>
             </div>
 
             <div class="col span_1_of_4 box">
-                <img src="resources/img/2.jpg" alt="potrait" class="team-member">
+                <img src="resources/img/2.webp" alt="potrait" class="team-member" width="200" height="200">
                 <h3>ANNE HATHAWAY</h3>
                 <span class="role">CEO / Marketing Guru</span>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni sequi vero consectetur ipsum atque
                     adipisci aut saepe aperiam vitae quam!</p>
                 <div class="social-link">
                     <ul>
-                        <li><a href="https://www.facebook.com"><i class="fa fa-facebook" aria-hidden="true"></i> </a>
+                        <li><a href="https://www.facebook.com" aria-label="social_media"><i class="fa fa-facebook"
+                                    aria-hidden="true"></i> </a>
                         </li>
-                        <li><a href="https://www.twitter.com"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                        <li><a href="https://www.linkedin.com"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                        <li><a href="https://www.twitter.com" aria-label="social_media"><i class="fa fa-twitter"
+                                    aria-hidden="true"></i></a></li>
+                        <li><a href="https://www.linkedin.com" aria-label="social_media"><i class="fa fa-linkedin"
+                                    aria-hidden="true"></i></a>
                         </li>
-                        <li><a href="https://www.google.com"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+                        <li><a href="https://www.google.com" aria-label="social_media"><i class="fa fa-envelope"
+                                    aria-hidden="true"></i></a></li>
                     </ul>
                 </div>
             </div>
 
             <div class="col span_1_of_4 box">
-                <img src="resources/img/4.jpg" alt="potrait" class="team-member">
+                <img src="resources/img/4.webp" alt="potrait" class="team-member" width="200" height="200">
                 <h3>ANNE HATHAWAY</h3>
                 <span class="role">CEO / Marketing Guru</span>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni sequi vero consectetur ipsum atque
                     adipisci aut saepe aperiam vitae quam!</p>
                 <div class="social-link">
                     <ul>
-                        <li><a href="https://www.facebook.com"><i class="fa fa-facebook" aria-hidden="true"></i> </a>
+                        <li><a href="https://www.facebook.com" aria-label="social_media"><i class="fa fa-facebook"
+                                    aria-hidden="true"></i> </a>
                         </li>
-                        <li><a href="https://www.twitter.com"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                        <li><a href="https://www.linkedin.com"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                        <li><a href="https://www.twitter.com" aria-label="social_media"><i class="fa fa-twitter"
+                                    aria-hidden="true"></i></a></li>
+                        <li><a href="https://www.linkedin.com" aria-label="social_media"><i class="fa fa-linkedin"
+                                    aria-hidden="true"></i></a>
                         </li>
-                        <li><a href="https://www.google.com"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+                        <li><a href="https://www.google.com" aria-label="social_media"><i class="fa fa-envelope"
+                                    aria-hidden="true"></i></a></li>
                     </ul>
                 </div>
             </div>
         </div>
-
     </section>
 
 
@@ -252,7 +270,7 @@
                     <circle class="incomplete" cx="40" cy="40" r="35"></circle>
                     <circle class="complete" cx="40" cy="40" r="35" style="stroke-dashoffset: 39.58406743523136;">
                     </circle>
-                    <text class="percentage" x="50%" y="57%" transform="matrix(0, 1, -1, 0, 80, 0)">75%</text>
+                    <text class="percentage" x="50%" y="57%" transform="matrix(0, 1, -1, 0, 80, 0)">85%</text>
                 </svg>
                 <h3>html / css</h3>
             </div>
@@ -262,7 +280,7 @@
                     <circle class="incomplete" cx="40" cy="40" r="35"></circle>
                     <circle class="complete" cx="40" cy="40" r="35" style="stroke-dashoffset: 39.58406743523136;">
                     </circle>
-                    <text class="percentage" x="50%" y="57%" transform="matrix(0, 1, -1, 0, 80, 0)">70%</text>
+                    <text class="percentage" x="50%" y="57%" transform="matrix(0, 1, -1, 0, 80, 0)">80%</text>
                 </svg>
                 <h3>Graphic Design</h3>
             </div>
@@ -272,7 +290,7 @@
                     <circle class="incomplete" cx="40" cy="40" r="35"></circle>
                     <circle class="complete" cx="40" cy="40" r="35" style="stroke-dashoffset: 39.58406743523136;">
                     </circle>
-                    <text class="percentage" x="50%" y="57%" transform="matrix(0, 1, -1, 0, 80, 0)">85%</text>
+                    <text class="percentage" x="50%" y="57%" transform="matrix(0, 1, -1, 0, 80, 0)">90%</text>
                 </svg>
                 <h3>ui / ux</h3>
             </div>
@@ -280,7 +298,6 @@
 
     </section>
 
-    <!-- PORTFOLIO SECTION -->
     <!-- PORTFOLIO SECTION -->
     <!-- PORTFOLIO SECTION -->
 
@@ -303,22 +320,22 @@
 
         <div class="row container">
             <div class="col span_1_of_2 mix apps box ">
-                <img src="resources/img/laptop1.png" alt="laptop1" class="portfolio-image">
+                <img src="resources/img/laptop1.webp" alt="laptop1" class="portfolio-image" width="500" height="250">
                 <p class="little-description">Isometric Perspective Mock-Up</p>
             </div>
 
             <div class="col span_1_of_2 mix apps web box">
-                <img src="resources/img/laptop3.png" alt="laptop2" class="portfolio-image">
+                <img src="resources/img/laptop3.webp" alt="laptop2" class="portfolio-image" width="500" height="250">
                 <p class="little-description">Isometric Perspective Mock-Up</p>
             </div>
 
             <div class="col span_1_of_2 mix icons box">
-                <img src="resources/img/laptop3.png" alt="laptop3" class="portfolio-image">
+                <img src="resources/img/laptop3.webp" alt="laptop3" class="portfolio-image" width="500" height="250">
                 <p class="little-description">Isometric Perspective Mock-Up</p>
             </div>
 
             <div class="col span_1_of_2 mix apps web icons box">
-                <img src="resources/img/laptop4.png" alt="laptop4" class="portfolio-image">
+                <img src="resources/img/laptop4.webp" alt="laptop4" class="portfolio-image" width="500" height="250">
                 <p class="little-description">Isometric Perspective Mock-Up</p>
             </div>
         </div>
@@ -343,7 +360,7 @@
 
             <div class="col span_1_of_2 box">
                 <div class="client-photo">
-                    <img src="resources/img/2.jpg" alt="portfolio">
+                    <img src="resources/img/2.webp" alt="portfolio" width="200" height="75">
                 </div>
                 <div class="client-reveal">
                     <p>“Nullam dapibus blandit orci, viverra gravida dui lobortis eget. Maecenas fringilla urna eu nisl
@@ -355,7 +372,7 @@
 
             <div class="col span_1_of_2 box">
                 <div class="client-photo">
-                    <img src="resources/img/4.jpg" alt="portfolio">
+                    <img src="resources/img/4.webp" alt="portfolio" width="200" height="75">
                 </div>
                 <div class="client-reveal">
                     <p>“Nullam dapibus blandit orci, viverra gravida dui lobortis eget. Maecenas fringilla urna eu nisl
@@ -367,7 +384,7 @@
 
             <div class="col span_1_of_2 box">
                 <div class="client-photo">
-                    <img src="resources/img/2.jpg" alt="portfolio">
+                    <img src="resources/img/2.webp" alt="portfolio" width="200" height="75">
                 </div>
                 <div class="client-reveal">
                     <p>“Nullam dapibus blandit orci, viverra gravida dui lobortis eget. Maecenas fringilla urna eu nisl
@@ -379,7 +396,7 @@
 
             <div class="col span_1_of_2 box">
                 <div class="client-photo">
-                    <img src="resources/img/4.jpg" alt="portfolio">
+                    <img src="resources/img/4.webp" alt="portfolio" width="200" height="75">
                 </div>
                 <div class="client-reveal">
                     <p>“Nullam dapibus blandit orci, viverra gravida dui lobortis eget. Maecenas fringilla urna eu nisl
@@ -388,13 +405,9 @@
                     <span class="role"> CEO of Pinterest</span>
                 </div>
             </div>
+        </div>
+    </section>
 
-
-
-    </section class="testimonial">
-
-    <!-- Start Contact Section -->
-    <!-- Start Contact Section -->
     <!-- Start Contact Section -->
 
     <section class="contact" id="contact">
@@ -402,40 +415,35 @@
             <h2>GET IN TOUCH</h2>
             <p class="little-description">
                 1600 Pennsylvania Ave NW, Washington, DC 20500,
-                 United States of America. Tel: (202) 456-1111
+                United States of America. Tel: (202) 456-1111
             </p>
         </div>
 
         <div class="row">
-            <form action="https://formspree.io/inew2732@gmail.com"  method="POST">
+            <form action="https://formspree.io/inew2732@gmail.com" method="POST">
 
                 <div class="row">
                     <div class="col span_1_of_2">
-                        <input type="text" placeholder="Your name*"
-                            name="name" id="" required>
+                        <input type="text" placeholder="Your name" required>
                     </div>
 
                     <div class="col span_1_of_2">
-                        <input type="text" placeholder="Your email*"
-                            name="email" id="" required>
+                        <input type="text" placeholder="Your email*" name="email" required>
                     </div>
                 </div>
 
                 <div class="row">
-                    <textarea name="Message" id="" cols="30" rows="10" 
-                    placeholder="Your Message*"></textarea>
+                    <textarea name="Message" cols="30" rows="10" placeholder="Your Message*"></textarea>
                 </div>
 
                 <div class="row">
-                   <input type="submit" value="Send Message" class="btn btn-submit">
+                    <input type="submit" value="Send Message" class="btn btn-submit">
                 </div>
             </form>
         </div>
-    </section class="contact">
+    </section>
 
-<!-- Start Footer -->
     <!-- Start Footer -->
-<!-- Start Footer -->
 
     <footer class="footer-section">
         <div class="row">
@@ -449,16 +457,13 @@
                 <li><a href="#">Github</a></li>
             </ul>
         </div>
-    </footer class="footer-section">
+    </footer>
 
 
     <!-- JS SCRIPT -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="vendors/js/"></script>
-    <script src="vendors/js/"></script>
-    <script src="vendors/js/"></script>
     <script src="vendors/js/jquery.waypoints.min.js"></script>
-    <script src="vendors/js/animated-circle.js"></script>  
+    <script src="vendors/js/animated-circle.js"></script>
     <script src="vendors/js/mixitup.min.js"></script>
 
     <script src="resources/js/main.js"></script>
