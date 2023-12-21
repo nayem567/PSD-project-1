@@ -1,0 +1,6 @@
+defaults:
+  - scope:
+      path: ""
+    values:
+      cache:
+        max-age: 8640000
