@@ -46,7 +46,7 @@
         <nav>
             <div class="row">
                 <a href="#home">
-                    <img class="logo" src="resources/img/logo.webp" alt="logo" width="1976" height="1084">
+                    <img class="logo" src="resources/img/logo.webp" alt="logo" width="150" height="100">
                 </a>
                 <ul class="main-nav ">
                     <li><a class="active" href="#home">HOME</a></li>
@@ -461,10 +461,17 @@
 
 
     <!-- JS SCRIPT -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" defer></script>
     <script src="vendors/js/jquery.waypoints.min.js" async></script>
     <script src="vendors/js/animated-circle.js" async></script>
     <script src="vendors/js/mixitup.min.js" async></script>
     <script src="resources/js/main.js" async></script>
+    <script>
+    function loadjQuery() {
+        var script = document.createElement('script');
+        script.src = 'https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js';
+        script.defer = true;
+        document.head.appendChild(script);
+    }
+    </script>
 </body>
 </html>
