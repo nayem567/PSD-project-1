@@ -235,8 +235,8 @@
 
     .btn-hero:link,
     .btn-hero:visited {
-        background: #eb7d4b;
-        border-color: #c86a40;
+        background: #973B11;
+        border-color: #000;
         /* margin-top: 4.5rem; */
         display: inline-block;
     }
