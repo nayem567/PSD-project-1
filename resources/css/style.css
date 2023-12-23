@@ -18,6 +18,17 @@
         line-height: 1.3rem;
         font-size: 1.6rem;
     }
+/* Font Awesome Brands */
+@font-face {
+   font-weight: 400;
+  font-display: swap; /* This is the key property */
+}
+/* Font Awesome Free */
+@font-face {
+  font-weight: 900;
+  font-display: swap; /* This is the key property */
+}
+
 
     /* HEADING */
 
